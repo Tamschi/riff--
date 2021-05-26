@@ -1,13 +1,13 @@
 [package]
-name = "TODO_CRATE_NAME"
+name = "riff--"
 version = "0.0.1"
 authors = ["Tamme Schichler <tamme@schichler.dev>"]
 edition = "2018"
-description = "TODO_DESCRIPTION"
+description = "Extracts RIFF files from an unstructured binary. Bad code."
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/Tamschi/TODO_CRATE_NAME"
-homepage = "https://github.com/Tamschi/TODO_CRATE_NAME/tree/v0.0.1"
-documentation = "https://docs.rs/TODO_CRATE_NAME/0.0.1"
+repository = "https://github.com/Tamschi/riff--"
+homepage = "https://github.com/Tamschi/riff--/tree/v0.0.1"
+documentation = "https://docs.rs/riff--/0.0.1"
 keywords = [] #TODO
 categories = [] #TODO
 readme = "README.md"
@@ -23,9 +23,13 @@ include = [
 resolver = "2"
 publish = false
 
+[[bin]]
+name = "riff--"
+path = "src/main.rs"
+
 [badges]
-is-it-maintained-issue-resolution = { repository = "Tamschi/TODO_CRATE_NAME" }
-is-it-maintained-open-issues = { repository = "Tamschi/TODO_CRATE_NAME" }
+is-it-maintained-issue-resolution = { repository = "Tamschi/riff--" }
+is-it-maintained-open-issues = { repository = "Tamschi/riff--" }
 maintenance = { status = "experimental" }
 
 [dev-dependencies]
