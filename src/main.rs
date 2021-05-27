@@ -16,7 +16,7 @@ pub mod readme {
 
 #[allow(clippy::missing_panics_doc)]
 pub fn main() {
-	for arg in args_os() {
+	for arg in args_os().skip(1) {
 		let data = read(arg.as_os_str()).unwrap();
 		let mut data = data.as_slice();
 
