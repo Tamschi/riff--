@@ -48,6 +48,8 @@ pub fn main() {
 				.unwrap()
 				.write_all(&data[..len])
 				.unwrap();
+
+			data = &data[len..];
 		}
 	}
 }
